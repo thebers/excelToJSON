@@ -30,16 +30,6 @@
             /* Get worksheet */
             var worksheet = workbook.Sheets[first_sheet_name];
             console.log("XLSX to JSON:", XLSX.utils.sheet_to_json(worksheet));
-            
-            console.log("workbook.SheetNames", workbook.SheetNames);
-            console.log("workbook.Sheets", workbook.Sheets);
-            console.log("workbook.Sheets[0]", workbook.Sheets[0]);
-            console.log("workbook.SheetNames[0]", workbook.SheetNames[0]);
-            console.log("worksheet", worksheet);
-            console.log("workbook", workbook);
-            console.log("first_sheet_name", first_sheet_name);
-            console.log("workbook.Sheets[first_sheet_name]", workbook.Sheets[first_sheet_name]);
-            console.log("XLSX to JSON:", XLSX.utils.sheet_to_json(workbook.Sheets[first_sheet_name]));
             }
             
             oReq.send();
